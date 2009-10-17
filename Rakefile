@@ -5,12 +5,16 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "getafreelancer"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = "API Wrapper for http://getafreelancer.com"
+    gem.description = "API Wrapper for http://getafreelancer.com"
     gem.email = "mark@amerine.net"
     gem.homepage = "http://github.com/amerine/getafreelancer"
     gem.authors = ["Mark Turner"]
+    gem.add_dependency 'httparty', '>= 0.4.5'
     gem.add_development_dependency "thoughtbot-shoulda"
+    gem.add_development_dependency "fakeweb"
+    gem.add_development_dependency "mhennemeyer-matchy"
+    
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
