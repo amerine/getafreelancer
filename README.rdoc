@@ -2,6 +2,19 @@
 
 API Wrapper for http://getafreelancer.com
 
+== Example
+
+	require 'getafreelancer'
+	client = GetAFreelancer::Client.new
+	user = client.user('amerine')
+	
+	puts user.id
+	=> "123435"
+	puts user.url
+	=> "http://amerine.net"
+	puts user.hourly_rate
+	=> "250"
+
 == Note on Patches/Pull Requests
  
 * Fork the project.
