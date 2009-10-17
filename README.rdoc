@@ -1,6 +1,6 @@
 = getafreelancer
 
-Description goes here.
+API Wrapper for http://getafreelancer.com
 
 == Note on Patches/Pull Requests
  
