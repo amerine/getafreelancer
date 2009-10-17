@@ -1,6 +1,6 @@
 module GetAFreelancer
   class User
-    attr_reader :ident, :client
+    attr_reader :ident, :client, :id
   
     def initialize(client, ident)
       @client, @ident = client, ident
@@ -12,6 +12,8 @@ module GetAFreelancer
     end
   
     def url
+      puts 'here'
+      puts @user.inspect
       @user['url']
     end
   
