@@ -18,6 +18,7 @@ module GetAFreelancer
     end
     
     def user(user_id_or_slug="")
+      raise ArgumentError, 'You must specify a User id or slug' if user_id_or_slug.blank?
       User.new(self, user_id_or_slug)
     end
   end
